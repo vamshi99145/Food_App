@@ -67,7 +67,7 @@
         </div>
 
         <span class="span">
-          Restaurant St, Delicious City, London 9578, UK
+          456, Banjara Hills, Hyderabad, Telangana 500034, India
         </span>
       </address>
 
@@ -101,9 +101,6 @@
 
     </div>
   </div>
-
-
-
 
 
   <!-- 
@@ -175,8 +172,8 @@
           <p class="headline-1 navbar-title">Visit Us</p>
 
           <address class="body-4">
-            Restaurant St, Delicious City, <br>
-            London 9578, UK
+            456, Banjara Hills, Hyderabad, <br>
+            Telangana 500034, India
           </address>
 
           <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
@@ -867,8 +864,8 @@
               <p class="contact-label">Location</p>
 
               <address class="body-4">
-                Restaurant St, Delicious City, <br>
-                London 9578, UK
+                456, Banjara Hills, Hyderabad, <br>
+                Telangana 500034, India
               </address>
 
               <p class="contact-label">Lunch Time</p>
@@ -1091,7 +1088,9 @@
           </a>
 
           <address class="body-4">
-            Restaurant St, Delicious City, London 9578, UK
+            456, Banjara Hills, Hyderabad, <br>
+            Telangana 500034, India
+
           </address>
 
           <a href="mailto:booking@grilli.com" class="body-4 contact-link">booking@grilli.com</a>
@@ -1181,15 +1180,39 @@
       </div>
 
       <div class="footer-bottom">
-
         <p class="copyright">
-          &copy; 2022 Grilli. All Rights Reserved | Crafted by <a href="https://github.com/codewithsadee"
-            target="_blank" class="link">codewithsadee</a>
+          &copy; <span id="year"></span> <span class="company-name">Grilli</span> All Rights Reserved | Crafted by 
+          <a href="https://www.linkedin.com/in/serla-vamshi-krishna/" target="_blank" class="link">Vamshi Krishna Serla</a>
         </p>
-
-      </div>
-
-    </div>
+        
+        <script>
+          document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+        
+        <style>
+          .copyright {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        
+          .company-name {
+            margin-left: 8px; /* Space between year and "Grilli" */
+            margin-right: 8px; /* Space between "Grilli" and "All Rights Reserved" */
+          }
+        
+          .link {
+            margin-left: 5px;
+            text-decoration: none;
+            color: inherit;
+          }
+        
+          .link:hover {
+            text-decoration: underline;
+          }
+        </style>
+        
   </footer>
 
 
